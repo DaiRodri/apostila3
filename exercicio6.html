@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            color: red;
+            font: 20px normal Arial;
+        }
+
+    </style>
 </head>
 <body>
     <script>
-        var n = "produtos"
-        var q = 1
-        var v = 10
-
-        n = promt(" entre com o produto")
-        q = prompt(" entre com a quantidade do produto")
-        v = Number(prompt(" entre com o valor do produto"))
-
         
-
-
-
+        p1 = prompt ("entre com o produto")
+        q1 = Number(prompt("entre com a quantidade do produto"))
+        v1 = Number( prompt("entre com o preço do produto"))
+        
+        p2 = prompt ("entre com o produto")
+        q2 = Number(prompt("entre com a quantidade do produto"))
+        v2 = Number(prompt ("entre com o preço do produto"))
+       
+        p3 = prompt ("entre com o produto")
+        q3 = Number(prompt ("entre com a quantidade do produto"))
+        v3 = Number(prompt ("entre com o preço do produto"))
+        quantidade = q1 + q2 + q3
+        soma = v1 + v2 + v3
+      
+        document.write ("Produto:   " + p1 + "   Quantidade:  " + q1 + "  Valor: R$  " + v1.toFixed(2) + " reais <br> <br>")
+        document.write ("Produto:   " + p2 + "   Quantidade:  " + q2 + "  Valor: RS  " + v2.toFixed(2) + " reais <br> <br>")
+        document.write ("Produto:   " + p3 + "   Quantidade:  " + q3 + "  Valor: R$  " + v3.toFixed(2) + " reais <br> <br>")
+        document.write ("Os produto são: " + p1 + "," + p2 + "," + p3 + "<br> <br>")
+        
+        quantidade = q1 + q2 + q3
+        soma = (v1 * q1) + (v2 * q2) + (v3 * q3)
+        document.write (" A quantidade total é:   " + quantidade + "<br> <br>") 
+        document.write (" O valor total é: R$   " + soma.toFixed(2) +  " reais <br> <br>")
 
     </script>
-    
-</body>
+        
+   
+       
 </html>
